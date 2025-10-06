@@ -1,0 +1,91 @@
+
+---Downloaded files---
+The import files for: IT Services were successfully downloaded!
+Initial max execution time = 600
+Files info:
+Site URL = http://creative-agency.local/tekprof_102
+Data file = /opt/lampp/htdocs/www/creative_agency/src/tekprof_102/wp-content/plugins/tekprof-toolkit/includes/demo-config/demos/demo/content.xml
+Widget file = /opt/lampp/htdocs/www/creative_agency/src/tekprof_102/wp-content/plugins/tekprof-toolkit/includes/demo-config/demos/general/widgets.wie
+Customizer file = /opt/lampp/htdocs/www/creative_agency/src/tekprof_102/wp-content/plugins/tekprof-toolkit/includes/demo-config/demos/demo/customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Primary Sidebar : 
+
+Rechercher - No Title - Imported
+Tekprof Categories - Categories - Imported
+Tekprof Recent Posts - Recent Posts - Imported
+Nuage d’étiquettes - Tags - Imported
+Tekprof Call to Action - No Title - Imported
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.
+
+---ocdi/after_import---
+
