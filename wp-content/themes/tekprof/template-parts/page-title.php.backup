@@ -135,51 +135,28 @@ if (is_404()) {
 
 ?>
 <?php if (is_singular('post')): ?>
-<!-- Modern Page Banner Start -->
-<section class="page-banner-area modern-banner rel z-1">
-    <div class="banner-background-wrapper">
-        <div class="banner-wrap modern-banner-wrap bgs-cover" <?php if (!empty($breadcrumb_image['url'])) : ?>
+<!-- Page Banner Start -->
+<!-- Page Banner Start -->
+<section class="page-banner-area blog-banner rel z-1">
+    <div class="container-fluid">
+        <div class="banner-wrap bgs-cover py-80" <?php if (!empty($breadcrumb_image['url'])) : ?>
             style="background-image: url(<?php echo esc_url($breadcrumb_image['url']); ?>);" <?php endif; ?>>
-
-            <!-- Gradient Overlay -->
-            <div class="banner-overlay"></div>
-
-            <!-- Decorative Shapes -->
-            <div class="banner-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
-
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-9 col-lg-10">
-                        <div class="banner-content-modern">
-                            <!-- Breadcrumb Top -->
-                            <nav aria-label="breadcrumb" class="modern-breadcrumb" data-aos="fade-down" data-aos-duration="800">
+                    <div class="col-xl-9">
+                        <div class="banner-inner blog-style">
+                            <nav aria-label="breadcrumb">
                                 <?php Tekprof_Breadcrumb::breadcrumb_init(); ?>
                             </nav>
-
-                            <!-- Main Title with Badge -->
-                            <div class="title-wrapper">
-                                <div class="title-badge" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                                    <span class="badge-icon"><i class="fas fa-newspaper"></i></span>
-                                    <span class="badge-text">Article</span>
-                                </div>
-                                <h1 class="page-title-modern" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                                    <?php echo implode('', $title_output); ?>
-                                </h1>
-                            </div>
-
-                            <!-- Meta Information -->
+                            <h1 class="page-title mt-25 rmt-15" data-aos="fade-up" data-aos-delay="100"
+                                data-aos-duration="1500" data-aos-offset="50"><?php echo implode('', $title_output); ?>
+                            </h1>
                             <?php if ('yes' === $show_post_meta) : ?>
-                            <div class="blog-meta-modern" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <div class="blog-meta-two mt-35 rmt-25" data-aos="fade-up" data-aos-delay="200"
+                                data-aos-duration="1500" data-aos-offset="50">
                                 <?php Tekprof_Post_Helper::render_post_meta(); ?>
                             </div>
                             <?php endif; ?>
-
-                            <!-- Decorative Line -->
-                            <div class="decorative-line" data-aos="scale-x" data-aos-delay="400" data-aos-duration="800"></div>
                         </div>
                     </div>
                 </div>
@@ -187,58 +164,33 @@ if (is_404()) {
         </div>
     </div>
 </section>
-<!-- Modern Page Banner End -->
+<!-- Page Banner End -->
 
 <?php else: ?>
-<!-- Modern Page Banner Start -->
-<section class="page-banner-area modern-banner rel z-1">
-    <div class="banner-background-wrapper" style="width: 100%;" >
-        <div class="banner-wrap modern-banner-wrap bgs-cover" <?php if (!empty($breadcrumb_image['url'])) : ?>
+<!-- Page Banner Start -->
+ <!--  pt-30  -->
+<section class="page-banner-area blog-banner rel z-1">
+	<!-- container-fluid -->
+    <div class="">
+        <div class="banner-wrap bgs-cover py-80" <?php if (!empty($breadcrumb_image['url'])) : ?>
             style="background-image: url(<?php echo esc_url($breadcrumb_image['url']); ?>);" <?php endif; ?>>
-
-            <!-- Gradient Overlay -->
-            <div class="banner-overlay"></div>
-
-            <!-- Decorative Shapes -->
-            <div class="banner-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
-
-            <!-- Animated Grid Background -->
-            <div class="grid-background"></div>
-
             <div class="container">
-                <div class="banner-content-modern text-center">
-                    <!-- Page Category Badge -->
-                    <!-- Main Title -->
-                    <h1 class="page-title-modern" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <?php echo implode('', $title_output); ?>
-                    </h1>
-
-                    <!-- Breadcrumb -->
-                    <nav aria-label="breadcrumb" class="modern-breadcrumb" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="banner-inner">
+                    <h1 class="page-title mb-20" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                        <?php echo implode('', $title_output); ?></h1>
+                    <nav aria-label="breadcrumb">
                         <?php
-                        if (is_singular('post') && 'yes' === $show_post_meta) {
-                            Tekprof_Post_Helper::render_post_meta();
-                        } elseif ('enabled' === $breadcrumb) {
-                            Tekprof_Breadcrumb::breadcrumb_init();
-                        }
-                        ?>
+							if (is_singular('post') && 'yes' === $show_post_meta) {
+								Tekprof_Post_Helper::render_post_meta();
+							} elseif ('enabled' === $breadcrumb) {
+								Tekprof_Breadcrumb::breadcrumb_init();
+							}
+							?>
                     </nav>
-
-                    <!-- Scroll Indicator -->
-                    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-                        <div class="scroll-icon">
-                            <span></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Modern Page Banner End -->
+<!-- Page Banner End -->
 <?php endif;

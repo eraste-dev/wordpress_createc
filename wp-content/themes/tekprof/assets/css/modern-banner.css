@@ -1,0 +1,475 @@
+/* ========================================
+   MODERN BANNER STYLES
+   Modern UI/UX Design for IT Professional Company
+   ======================================== */
+
+/* Banner Container */
+.modern-banner {
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.modern-banner-wrap {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    padding: 120px 0;
+    transition: all 0.3s ease;
+}
+
+/* Gradient Overlay */
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+        rgba(15, 23, 42, 0.92) 0%,
+        rgba(30, 58, 138, 0.85) 50%,
+        rgba(59, 130, 246, 0.75) 100%);
+    z-index: 1;
+}
+
+/* Alternative: Glassmorphism Overlay */
+.banner-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(2px);
+}
+
+/* Decorative Shapes */
+.banner-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.banner-shapes .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 20s ease-in-out infinite;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    top: -100px;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+    bottom: -50px;
+    left: 5%;
+    animation-delay: -5s;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    top: 50%;
+    right: 5%;
+    animation-delay: -10s;
+}
+
+.shape-4 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    bottom: 10%;
+    right: 30%;
+    animation-delay: -15s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-30px) rotate(5deg); }
+    50% { transform: translateY(-60px) rotate(-5deg); }
+    75% { transform: translateY(-30px) rotate(3deg); }
+}
+
+/* Grid Background */
+.grid-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+/* Banner Content */
+.banner-content-modern {
+    position: relative;
+    z-index: 10;
+}
+
+/* Page Category Badge */
+.page-category-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #3b82f6;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* Title Badge (for blog posts) */
+.title-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.badge-icon {
+    font-size: 18px;
+    color: #3b82f6;
+}
+
+/* Modern Page Title */
+.page-title-modern {
+    font-size: 56px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.5px;
+}
+
+/* Page Subtitle */
+.page-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* Modern Breadcrumb */
+.modern-breadcrumb {
+    margin-bottom: 0;
+}
+
+.modern-breadcrumb .breadcrumb {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 25px;
+    border-radius: 50px;
+    display: inline-flex;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modern-breadcrumb .breadcrumb-item {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.modern-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "→";
+    color: #3b82f6;
+    margin: 0 8px;
+}
+
+.modern-breadcrumb .breadcrumb-item.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.modern-breadcrumb .breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modern-breadcrumb .breadcrumb-item a:hover {
+    color: #3b82f6;
+}
+
+/* Blog Meta Modern */
+.blog-meta-modern {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.blog-meta-modern .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.blog-meta-modern .meta-item i {
+    color: #3b82f6;
+}
+
+/* Decorative Line */
+.decorative-line {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    border-radius: 2px;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    margin-top: 40px;
+}
+
+.scroll-icon {
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.scroll-icon span {
+    width: 4px;
+    height: 10px;
+    background: #3b82f6;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    animation: scroll-down 2s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+    0%, 100% { opacity: 1; top: 8px; }
+    50% { opacity: 0.3; top: 20px; }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 991px) {
+    .modern-banner-wrap {
+        padding: 80px 0;
+        min-height: 350px;
+    }
+
+    .page-title-modern {
+        font-size: 40px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .shape-1, .shape-2, .shape-3, .shape-4 {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 767px) {
+    .modern-banner-wrap {
+        padding: 60px 0;
+        min-height: 300px;
+        background-attachment: scroll; /* Disable parallax on mobile */
+    }
+
+    .page-title-modern {
+        font-size: 32px;
+    }
+
+    .page-subtitle {
+        font-size: 15px;
+    }
+
+    .page-category-badge {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    .blog-meta-modern {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .modern-breadcrumb .breadcrumb {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .banner-shapes .shape {
+        opacity: 0.05;
+    }
+
+    .scroll-indicator {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .page-title-modern {
+        font-size: 28px;
+    }
+
+    .modern-banner-wrap {
+        padding: 50px 0;
+    }
+
+    .page-subtitle {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .title-badge {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .decorative-line {
+        width: 60px;
+        height: 3px;
+    }
+}
+
+/* ========================================
+   HOVER EFFECTS & INTERACTIONS
+   ======================================== */
+
+.modern-banner:hover .banner-overlay {
+    background: linear-gradient(135deg,
+        rgba(15, 23, 42, 0.88) 0%,
+        rgba(30, 58, 138, 0.82) 50%,
+        rgba(59, 130, 246, 0.72) 100%);
+}
+
+.modern-banner:hover .shape {
+    opacity: 0.15;
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .banner-shapes .shape,
+    .pulse-dot,
+    .scroll-icon span {
+        animation: none;
+    }
+
+    .modern-banner-wrap {
+        background-attachment: scroll;
+    }
+}
+
+/* ========================================
+   DARK MODE SUPPORT (optional)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+    .banner-overlay {
+        background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(15, 23, 42, 0.9) 50%,
+            rgba(30, 58, 138, 0.85) 100%);
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    .banner-shapes,
+    .grid-background,
+    .scroll-indicator {
+        display: none;
+    }
+
+    .modern-banner-wrap {
+        background: none !important;
+        padding: 20px 0;
+    }
+
+    .banner-overlay {
+        display: none;
+    }
+
+    .page-title-modern {
+        color: #000;
+        text-shadow: none;
+    }
+}

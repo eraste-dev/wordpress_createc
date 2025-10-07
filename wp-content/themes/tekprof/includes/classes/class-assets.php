@@ -97,6 +97,7 @@ class Tekprof_Assets
 		wp_enqueue_style('bootstrap');
 		wp_enqueue_style('fontawesome', TEKPROF_VENDOR . '/fontawesome/all.min.css', [], '5.14');
 		wp_enqueue_style('tekprof-theme', TEKPROF_ASSETS . '/css/style.css', [], TEKPROF_VERSION);
+		wp_enqueue_style('tekprof-modern-banner', TEKPROF_ASSETS . '/css/modern-banner.css', [], TEKPROF_VERSION);
 		wp_enqueue_style('tekprof-style', get_stylesheet_uri(), [], TEKPROF_VERSION);
 	}
 
