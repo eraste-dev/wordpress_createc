@@ -6,7 +6,7 @@ if ('layout_six' == $settings['layout_type']) : ?>
 
     <div class="main-header header-three white-menu menu-absolute">
         <?php if (!empty($settings['top_text']) || !empty($settings['button_label'])) : ?>
-            <div class="header-top-wrap bgc-secondary">
+            <div class="header-top-wrap bgc-secondary" style="background-color: var(--tekprof-secondary-color) !important;" >
                 <div class="container">
                     <div class="header-top">
                         <div class="text"><?php echo rt_kses_basic($settings['top_text']); ?><a href="<?php echo esc_url($settings['button_url']['url']); ?>" <?php if (!empty($settings['button_url']['is_external'])) : ?> target="_blank" <?php endif; ?>><?php echo esc_html($settings['button_label']); ?></a></div>
@@ -73,6 +73,9 @@ if ('layout_six' == $settings['layout_type']) : ?>
 
                     <!-- Menu Button -->
                     <div class="menu-btns">
+                        <?php if (!empty($settings['button_label'])) : ?>
+                            <a href="<?php echo esc_url($settings['button_url']['url']); ?>" <?php if (!empty($settings['button_url']['is_external'])) : ?> target="_blank" <?php endif; ?> class="theme-btn btn-small ms-lg-4"><?php echo esc_html($settings['button_label']); ?></a>
+                        <?php endif; ?>
                         <!-- menu sidbar -->
                         <div class="menu-sidebar ms-sm-5">
                             <button>
