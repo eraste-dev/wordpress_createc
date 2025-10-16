@@ -9158,12 +9158,12 @@ h6,
   }
 }
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   .about-content {
     max-width: 410px;
     margin-left: auto;
   }
-}
+} */
 
 @media only screen and (min-width: 376px) {
   .about-content p {
