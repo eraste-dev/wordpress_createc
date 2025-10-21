@@ -7588,7 +7588,7 @@ h6,
   position: relative;
 }
 
-.services-area.style-two:before {
+/* .services-area.style-two:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -7599,7 +7599,7 @@ h6,
   background: -webkit-linear-gradient(322.85deg, rgba(11, 10, 51, 0.5) 14.07%, rgba(11, 10, 51, 0.3) 71.55%);
   background: -o-linear-gradient(322.85deg, rgba(11, 10, 51, 0.5) 14.07%, rgba(11, 10, 51, 0.3) 71.55%);
   background: linear-gradient(127.15deg, rgba(11, 10, 51, 0.5) 14.07%, rgba(11, 10, 51, 0.3) 71.55%);
-}
+} */
 
 .service-item {
   position: relative;

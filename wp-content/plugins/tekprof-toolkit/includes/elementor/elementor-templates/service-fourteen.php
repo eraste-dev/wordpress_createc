@@ -1,10 +1,10 @@
 <?php if ('layout_fourteen' == $settings['layout_type']) : ?>
     <!-- Services Area start -->
-    <section class="services-area style-two bgs-cover pt-130 rpt-100 pb-100 rpb-70 rel z-1" style="background-image: url(<?php echo esc_url($settings['layout_fourteen_bg_image']['url']); ?>);">
+    <section class="services-area style-two bgs-cover pt-130 rpt-100 pb-100 rpb-70 rel z-1"<?php if (!empty($settings['layout_fourteen_bg_image']['url'])) : ?> style="background-image: url(<?php echo esc_url($settings['layout_fourteen_bg_image']['url']); ?>);"<?php endif; ?>>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10">
-                    <div class="section-title text-white text-center mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                    <div class="section-title text-center mb-70" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                         <?php if (!empty($settings['layout_fourteen_subtitle'])) : ?>
                             <span class="sub-title color-primary mb-10"><?php echo esc_html($settings['layout_fourteen_subtitle']); ?></span>
                         <?php endif; ?>

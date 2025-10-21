@@ -1,0 +1,3 @@
+Version 1.1.1
+- Hidden -> Mega Width "Fullwidth/Boxed"
+- Remove js process for Fullwidth/Boxed.

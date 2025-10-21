@@ -32,10 +32,10 @@ define("DB_PASSWORD", "");
 define("DB_HOST", "localhost");
 
 /** Database charset to use in creating database tables. */
-define("DB_CHARSET", "utf8");
+define("DB_CHARSET", 'utf8mb4');
 
 /** The database collate type. Don't change this if in doubt. */
-define("DB_COLLATE", "");
+define("DB_COLLATE", '');
 
 define("FS_METHOD", "direct");
 
@@ -50,14 +50,14 @@ define("FS_METHOD", "direct");
  *
  * @since 2.6.0
  */
-define("AUTH_KEY", "put your unique phrase here");
-define("SECURE_AUTH_KEY", "put your unique phrase here");
-define("LOGGED_IN_KEY", "put your unique phrase here");
-define("NONCE_KEY", "put your unique phrase here");
-define("AUTH_SALT", "put your unique phrase here");
-define("SECURE_AUTH_SALT", "put your unique phrase here");
-define("LOGGED_IN_SALT", "put your unique phrase here");
-define("NONCE_SALT", "put your unique phrase here");
+define("AUTH_KEY", 'put your unique phrase here');
+define("SECURE_AUTH_KEY", 'put your unique phrase here');
+define("LOGGED_IN_KEY", 'put your unique phrase here');
+define("NONCE_KEY", 'put your unique phrase here');
+define("AUTH_SALT", 'put your unique phrase here');
+define("SECURE_AUTH_SALT", 'put your unique phrase here');
+define("LOGGED_IN_SALT", 'put your unique phrase here');
+define("NONCE_SALT", 'put your unique phrase here');
 
 /**#@-*/
 
@@ -73,7 +73,7 @@ define("NONCE_SALT", "put your unique phrase here");
  *
  * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/#table-prefix
  */
-$table_prefix = "wp_";
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -87,7 +87,7 @@ $table_prefix = "wp_";
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define("WP_DEBUG", false);
+define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -96,7 +96,7 @@ define( 'DUPLICATOR_AUTH_KEY', '@Dem7?nj@}bt A[8DTgOa(nl<Q2}PZ6FIt+Uat^Awk|FT[-P
 
 /** Absolute path to the WordPress directory. */
 if (!defined("ABSPATH")) {
-    define("ABSPATH", __DIR__ . "/");
+    define("ABSPATH", __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
