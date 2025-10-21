@@ -6,11 +6,13 @@
         <?php if (!empty($settings['layout_three_summary_text'])) : ?>
             <p><?php echo esc_html($settings['layout_three_summary_text']); ?></p>
         <?php endif; ?>
-        <form action="#" class="mc-form">
-            <label for="email"><i class="far fa-envelope"></i></label>
-            <input id="email" type="email" class="mc-form__input" placeholder="<?php echo esc_attr($settings['layout_three_placeholder']); ?>" required>
-            <button><?php echo esc_html($settings['layout_three_btn_label']); ?></button>
-        </form>
+        <?php if (!empty($settings['layout_three_title'])) : ?>
+            <form action="#" class="mc-form">
+                <label for="email"><i class="far fa-envelope"></i></label>
+                <input id="email" type="email" class="mc-form__input" placeholder="<?php echo esc_attr($settings['layout_three_placeholder']); ?>" required>
+                <button><?php echo esc_html($settings['layout_three_btn_label']); ?></button>
+            </form>
+        <?php endif; ?>
         <p class="mc-form__feedback text-white"></p>
         <?php if (!empty($settings['layout_three_social_title'])) : ?>
             <h5 class="text-white"><?php echo esc_html($settings['layout_three_social_title']); ?></h5>

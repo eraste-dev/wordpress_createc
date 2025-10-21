@@ -3,7 +3,7 @@
     <section class="contact-form-area pt-130 rpt-100 pb-120 rpb-90">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-5 col-lg-6 col-md-9">
+                <div class="col-xl-5 col-lg-4 col-md-9">
                     <div class="contact-info-part rmb-55" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
                         <div class="section-title mb-40">
                             <?php if (!empty($settings['layout_four_section_subtitle'])) : ?>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6 col-md-9">
+                <div class="col-xl-5 col-lg-8 col-md-9">
                     <div class="contact-page-form z-1 rel" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
                         <div id="contactForm" class="contactForm">
                             <?php if (!empty($settings['layout_four_ct_from_title'])) : ?>

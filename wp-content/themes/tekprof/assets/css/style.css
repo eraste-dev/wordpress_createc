@@ -6788,7 +6788,7 @@ h6,
 /*******************************************************/
 .banner-wrap {
   position: relative;
-  height: 630px;
+  height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6806,19 +6806,19 @@ h6,
 
 @media only screen and (max-width: 1199px) {
   .banner-wrap {
-    height: 530px;
+    height: 380px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .banner-wrap {
-    height: 430px;
+    height: 480px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .banner-wrap {
-    height: 330px;
+    height: 230px;
   }
 }
 

@@ -16,7 +16,7 @@ $show_meta     = Helper::get_option('archive_post_meta', 'yes');
 $show_excerpt  = Helper::get_option('archive_post_excerpt', 'yes');
 $excerpt_count = Helper::get_option('archive_excerpt_count', 30);
 $show_button   = Helper::get_option('archive_post_button', 'yes');
-$button_text   = Helper::get_option('post_button_text', __('Read More', 'tekprof'));
+$button_text   = Helper::get_option('post_button_text', __('Lire la suite', 'tekprof'));
 
 $post_class = ['entry-post', 'clearfix'];
 
@@ -51,8 +51,8 @@ if (! has_post_thumbnail()) {
 			}
 			?><?php if ('yes' === $show_button && ! empty($button_text)) {
 					if ('product' === get_post_type()) { ?>
-			<a href="<?php the_permalink(); ?>" class="blog-read-more" data-hover="<?php esc_attr_e('View Product', 'tekprof'); ?>">
-				<span><?php esc_html_e('View Product', 'tekprof'); ?></span>
+			<a href="<?php the_permalink(); ?>" class="blog-read-more" data-hover="<?php esc_attr_e('Voir le produit', 'tekprof'); ?>">
+				<span><?php esc_html_e('Voir le produit', 'tekprof'); ?></span>
 			</a>
 		<?php } else { ?>
 			<a href="<?php the_permalink(); ?>" class="blog-read-more" data-hover="<?php echo esc_attr($button_text); ?>">

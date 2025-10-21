@@ -33,7 +33,9 @@
                 <div class="col-xl-6">
                     <div class="consultations-video mt-55 wow fadeInRight delay-0-2s">
                         <?php echo rt_elementor_rendered_image($settings, 'layout_one_video_image'); ?>
-                        <a href="<?php echo esc_url($settings['layout_one_video_url']['url']); ?>" class="mfp-iframe video-play"><i class="fas fa-play"></i></a>
+                        <?php if (!empty($settings['layout_one_video_url']) && is_array($settings['layout_one_video_url']) && !empty($settings['layout_one_video_url']['url'])) : ?>
+                            <a href="<?php echo esc_url($settings['layout_one_video_url']['url']); ?>" class="mfp-iframe video-play"><i class="fas fa-play"></i></a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

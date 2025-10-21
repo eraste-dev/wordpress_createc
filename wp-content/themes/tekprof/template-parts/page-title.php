@@ -219,6 +219,7 @@ if (is_404()) {
                     </h1>
 
                     <!-- Breadcrumb -->
+                     <?php if (false) : ?>
                     <nav aria-label="breadcrumb" class="modern-breadcrumb" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <?php
                         if (is_singular('post') && 'yes' === $show_post_meta) {
@@ -228,13 +229,7 @@ if (is_404()) {
                         }
                         ?>
                     </nav>
-
-                    <!-- Scroll Indicator -->
-                    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-                        <div class="scroll-icon">
-                            <span></span>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
