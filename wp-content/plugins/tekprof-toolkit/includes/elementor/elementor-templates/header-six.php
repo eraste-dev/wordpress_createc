@@ -77,11 +77,13 @@ if ('layout_six' == $settings['layout_type']) : ?>
                             <a href="<?php echo esc_url($settings['button_url']['url']); ?>" <?php if (!empty($settings['button_url']['is_external'])) : ?> target="_blank" <?php endif; ?> class="theme-btn btn-small ms-lg-4"><?php echo esc_html($settings['button_label']); ?></a>
                         <?php endif; ?>
                         <!-- menu sidbar -->
-                        <div class="menu-sidebar ms-sm-5">
-                            <button>
-                                <span class="toggle-btn"></span>
-                            </button>
-                        </div>
+                         <?php if(false): ?>
+                            <div class="menu-sidebar ms-sm-5">
+                                <button>
+                                    <span class="toggle-btn"></span>
+                                </button>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

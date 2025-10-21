@@ -27,7 +27,11 @@
                             $delay = 100;
                             foreach ($settings['layout_twelve_services'] as $index => $item):
                                 $border_class = ($index % 2 == 0) ? 'border-right border-left' : 'border-right';
-                                $border_class .= ($index < 2) ? ' for-border-bottom' : '';
+                                if ($index < 2) {
+                                    $border_class .= ' for-border-bottom';
+                                } elseif ($index >= 4) {
+                                    $border_class .= ' for-border-top';
+                                }
                         ?>
                                 <div class="col-sm-6 <?php echo esc_attr($border_class); ?>" data-aos="fade-up" data-aos-delay="<?php echo esc_attr($delay); ?>" data-aos-duration="1500" data-aos-offset="50">
                                     <div class="feature-item-three style-two <?php echo ($index % 2 == 0) ? 'me-lg-auto ms-lg-auto' : 'me-lg-auto ms-sm-auto'; ?>">

@@ -19,6 +19,7 @@ use TekprofTheme\Classes\Tekprof_Post_Helper;
 get_header();
 ?>
 <!-- Blog List Area start -->
+<!-- Blog List Area start -->
 <section class="blog-standard-page py-130 rpy-100 rel z-1">
 	<div class="container">
 		<div class="row">

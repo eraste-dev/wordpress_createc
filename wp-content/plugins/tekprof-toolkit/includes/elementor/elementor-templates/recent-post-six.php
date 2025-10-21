@@ -67,11 +67,9 @@ if ('layout_six' == $settings['layout_type']) : ?>
                             <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="<?php echo esc_attr($i); ?>" data-aos-duration="1500" data-aos-offset="50">
                                 <div class="blog-item-two style-two">
                                     <?php if (has_post_thumbnail() && 'yes' === $settings['show_thumbnail']): ?>
-                                        <?php if(isset($idd)): ?>
-                                            <div class="image">
-                                                <?php echo get_the_post_thumbnail($idd, $settings['post_thumbnail_size']); ?>
-                                            </div>
-                                        <?php endif; ?>
+                                        <div class="image">
+                                            <?php echo get_the_post_thumbnail(get_the_ID(), $settings['post_thumbnail_size']); ?>
+                                        </div>
                                     <?php endif; ?>
                                     <div class="content">
                                         <ul class="blog-meta">

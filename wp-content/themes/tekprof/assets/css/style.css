@@ -5350,6 +5350,16 @@ h6,
   color: white;
 }
 
+@media only screen and (max-width: 991px) {
+  .main-header.header-three.white-menu.menu-absolute .nav-search>button {
+    color: #0B0C0C;
+  }
+
+  .main-header.header-three.white-menu.menu-absolute .navbar-toggle .icon-bar {
+    background: #0B0C0C;
+  }
+}
+
 .main-header.white-menu .menu-sidebar>button {
   --c: conic-gradient(from -90deg, white 90deg, #0000 0);
 }
@@ -6806,7 +6816,7 @@ h6,
 
 @media only screen and (max-width: 1199px) {
   .banner-wrap {
-    height: 380px;
+    height: 450px;
   }
 }
 
