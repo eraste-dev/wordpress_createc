@@ -2,7 +2,7 @@
     <!-- Consultations Area start -->
     <section class="consultations-area pt-75 rpt-45 rel z-1">
         <div class="container container-1440">
-            <div class="row no-gap align-items-end">
+            <div class="row no-gap align-items-center">
                 <div class="col-xl-6">
                     <div class="consultations-content mt-55 wow fadeInLeft delay-0-2s">
                         <div class="section-title mb-30">
@@ -17,15 +17,17 @@
                             </ul>
                             <div class="about-btns">
                                 <?php if (!empty($settings['layout_one_button_label'])): ?>
+                                    <div class="hotline mt-15">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="content">
+                                            <span><?php echo rt_kses_basic($settings['layout_one_hotline_text']); ?></span><br>
+                                            <a href="<?php echo esc_url($settings['layout_one_hotline_number_url']); ?>"><?php echo rt_kses_basic($settings['layout_one_hotline_number']); ?></a>
+                                        </div>
+                                    </div>  
+                                <?php endif; ?>
+                                <?php if (!empty($settings['layout_one_button_label'])): ?>
                                     <a href="<?php echo esc_url($settings['layout_one_button_url']['url']); ?>" class="theme-btn mt-15" <?php echo ($settings['layout_one_button_url']['is_external']) ? 'target="_blank"' : ''; ?> <?php echo ($settings['layout_one_button_url']['nofollow']) ? 'rel="nofollow"' : ''; ?>><?php echo rt_kses_basic($settings['layout_one_button_label']); ?> <i class="fas fa-long-arrow-right"></i></a>
                                 <?php endif; ?>
-                                <div class="hotline mt-15">
-                                    <i class="fas fa-phone"></i>
-                                    <div class="content">
-                                        <span><?php echo rt_kses_basic($settings['layout_one_hotline_text']); ?></span><br>
-                                        <a href="<?php echo esc_url($settings['layout_one_hotline_number_url']); ?>"><?php echo rt_kses_basic($settings['layout_one_hotline_number']); ?></a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -43,3 +45,9 @@
     </section>
     <!-- Consultations Area end -->
 <?php endif; ?>
+
+<style>
+    .consultations-area::after {
+        height: 0px !important;
+    }
+</style>

@@ -204,7 +204,12 @@ class Tekprof_Helper
 					break;
 				case 'post':
 					$post_default_header = self::get_meta('tekprof_post_meta', 'post_default_header', 'default');
-					$default_header      = ('default' !== $post_default_header) ? $post_default_header : $default_header;
+					// Force header to be enabled for blog posts if meta is 'default'
+					if ('default' === $post_default_header) {
+						$default_header = 'enabled';
+					} else {
+						$default_header = $post_default_header;
+					}
 					break;
 			}
 		}
@@ -236,7 +241,12 @@ class Tekprof_Helper
 					break;
 				case 'post':
 					$post_default_footer = self::get_meta('tekprof_post_meta', 'post_default_footer', 'default');
-					$default_footer      = ('default' !== $post_default_footer) ? $post_default_footer : $default_footer;
+					// Force footer to be enabled for blog posts if meta is 'default'
+					if ('default' === $post_default_footer) {
+						$default_footer = 'enabled';
+					} else {
+						$default_footer = $post_default_footer;
+					}
 					break;
 			}
 		}
