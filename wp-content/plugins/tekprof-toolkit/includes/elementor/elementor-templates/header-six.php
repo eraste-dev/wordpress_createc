@@ -15,6 +15,9 @@ if ('layout_six' == $settings['layout_type']) : ?>
             </div>
         <?php endif; ?>
         <!--Header-Upper-->
+        <!--Header-Upper-->
+        <!--Header-Upper-->
+        <!--Header-Upper-->
         <div class="header-upper">
             <div class="container clearfix">
 
