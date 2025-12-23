@@ -11,6 +11,27 @@
   background: #ffffff !important;
 }
 
+/* Homepage header icons - white when not scrolled (scroll = 0) */
+/* This ensures icons are visible on dark background before scroll */
+.home .main-header.header-three.white-menu.menu-absolute:not(.fixed-header) .nav-search>button {
+  color: #ffffff !important;
+}
+
+.home .main-header.header-three.white-menu.menu-absolute:not(.fixed-header) .main-menu .navbar-header .navbar-toggle .icon-bar {
+  background: #ffffff !important;
+}
+
+/* Homepage mobile - override black icons on mobile */
+@media only screen and (max-width: 991px) {
+  .home .main-header.header-three.white-menu.menu-absolute:not(.fixed-header) .nav-search>button {
+    color: #ffffff !important;
+  }
+
+  .home .main-header.header-three.white-menu.menu-absolute:not(.fixed-header) .navbar-toggle .icon-bar {
+    background: #ffffff !important;
+  }
+}
+
 
 /* Navigation links - force black color on scroll */
 @media only screen and (min-width: 992px) {
